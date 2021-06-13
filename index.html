@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Udemy</title>
+
+    <!-- FONT AWESOME CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- FONT GOOGLE CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SLICK CSS -->
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css" />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="header-wrapper">
+        <div class="header-left">
+          <img src="./img/logo-coral.svg" alt="logo-coral" />
+          <i class="fas fa-th"></i>
+          <span>Categories</span>
+          <div class="search-area">
+            <input type="text" placeholder="Search for courses" />
+            <button>
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+        <div class="header-right">
+          <span>Udemy for Business</span>
+          <span>Become an instructor</span>
+          <i class="fas fa-shopping-cart"></i>
+          <button class="btn-log-in">Login</button>
+          <button class="btn-sign-up">Sign Up</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner">
+      <div class="banner__text">
+        <h1>Learn on your schedule</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
+          dolores dignissimos repudiandae sint quae itaque.
+        </p>
+        <div class="search-area">
+          <input type="text" placeholder="Search for courses" />
+          <button>
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features">
+      <div class="features-wrapper">
+        <div class="features__item">
+          <i class="fas fa-bullseye"></i>
+          <div class="features__item__text">
+            <h2>80,000 online courses</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+        <div class="features__item">
+          <i class="fas fa-spinner"></i>
+          <div class="features__item__text">
+            <h2>Expert Instruction</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+        <div class="features__item">
+          <i class="fas fa-sync-alt"></i>
+          <div class="features__item__text">
+            <h2>Lifetime access</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COURSES -->
+    <section class="courses">
+      <div class="courses-wrapper">
+        <div class="courses-left">
+          <div class="courses-left__text">
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
+              labore voluptas quas similique dignissimos recusandae!
+            </p>
+          </div>
+        </div>
+        <div class="courses-right">
+          <div class="courses-right-wrapper">
+            <div class="courses-right__nav">
+              <ul>
+                <li class="active nav-tab" data-tab="dev">Development</li>
+                <li class="nav-tab" data-tab="design">Design</li>
+                <li class="nav-tab" data-tab="business">Business</li>
+                <li class="nav-tab" data-tab="dev">IT</li>
+                <li class="nav-tab" data-tab="dev">Personal</li>
+                <li class="nav-tab" data-tab="dev">Marketing</li>
+                <li class="nav-tab" data-tab="dev">Photography</li>
+              </ul>
+            </div>
+
+            <div
+              class="courses-carousel multiple-items active"
+              data-tab-target="dev"
+            >
+              <div class="courses__item" id="courses__item-1">
+                <img src="./img/kh1.jpg" alt="kh1" />
+                <div class="courses__item-text">
+                  <h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo, deleniti?
+                  </h3>
+                  <p>Lorem ipsum dolor sit.</p>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                    <span>4.6</span>
+                    <span>(11.597)</span>
+                  </div>
+                  <div class="price">
+                    <span>$179.99</span>
+                    <span>$9.99</span>
+                  </div>
+                </div>
+              </div>
+              <div class="courses__item" id="courses__item-1">
+                <img src="./img/kh1.jpg" alt="kh1" />
+                <div class="courses__item-text">
+                  <h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo, deleniti?
+                  </h3>
+                  <p>Lorem ipsum dolor sit.</p>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                    <span>4.6</span>
+                    <span>(11.597)</span>
+                  </div>
+                  <div class="price">
+                    <span>$179.99</span>
+                    <span>$9.99</span>
+                  </div>
+                </div>
+              </div>
+              <div class="courses__item" id="courses__item-1">
+                <img src="./img/kh1.jpg" alt="kh1" />
+                <div class="courses__item-text">
+                  <h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo, deleniti?
+                  </h3>
+                  <p>Lorem ipsum dolor sit.</p>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                    <span>4.6</span>
+                    <span>(11.597)</span>
+                  </div>
+                  <div class="price">
+                    <span>$179.99</span>
+                    <span>$9.99</span>
+                  </div>
+                </div>
+              </div>
+              <div class="courses__item" id="courses__item-1">
+                <img src="./img/kh1.jpg" alt="kh1" />
+                <div class="courses__item-text">
+                  <h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo, deleniti?
+                  </h3>
+                  <p>Lorem ipsum dolor sit.</p>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                    <span>4.6</span>
+                    <span>(11.597)</span>
+                  </div>
+                  <div class="price">
+                    <span>$179.99</span>
+                    <span>$9.99</span>
+                  </div>
+                </div>
+              </div>
+              <div class="courses__item" id="courses__item-1">
+                <img src="./img/kh1.jpg" alt="kh1" />
+                <div class="courses__item-text">
+                  <h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo, deleniti?
+                  </h3>
+                  <p>Lorem ipsum dolor sit.</p>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                    <span>4.6</span>
+                    <span>(11.597)</span>
+                  </div>
+                  <div class="price">
+                    <span>$179.99</span>
+                    <span>$9.99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="courses-carousel multiple-items"
+              data-tab-target="design"
+            >
+              <div class="courses__item" id="courses__item-1">
+                <img src="./img/kh2.jpg" alt="kh2" />
+                <div class="courses__item-text">
+                  <h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo, deleniti?
+                  </h3>
+                  <p>Lorem ipsum dolor sit.</p>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                    <span>4.6</span>
+                    <span>(11.597)</span>
+                  </div>
+                  <div class="price">
+                    <span>$179.99</span>
+                    <span>$9.99</span>
+                  </div>
+                </div>
+              </div>
+              <div class="courses__item" id="courses__item-1">
+                <img src="./img/kh2.jpg" alt="kh2" />
+                <div class="courses__item-text">
+                  <h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo, deleniti?
+                  </h3>
+                  <p>Lorem ipsum dolor sit.</p>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                    <span>4.6</span>
+                    <span>(11.597)</span>
+                  </div>
+                  <div class="price">
+                    <span>$179.99</span>
+                    <span>$9.99</span>
+                  </div>
+                </div>
+              </div>
+              <div class="courses__item" id="courses__item-1">
+                <img src="./img/kh2.jpg" alt="kh2" />
+                <div class="courses__item-text">
+                  <h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo, deleniti?
+                  </h3>
+                  <p>Lorem ipsum dolor sit.</p>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                    <span>4.6</span>
+                    <span>(11.597)</span>
+                  </div>
+                  <div class="price">
+                    <span>$179.99</span>
+                    <span>$9.99</span>
+                  </div>
+                </div>
+              </div>
+              <div class="courses__item" id="courses__item-1">
+                <img src="./img/kh2.jpg" alt="kh2" />
+                <div class="courses__item-text">
+                  <h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo, deleniti?
+                  </h3>
+                  <p>Lorem ipsum dolor sit.</p>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                    <span>4.6</span>
+                    <span>(11.597)</span>
+                  </div>
+                  <div class="price">
+                    <span>$179.99</span>
+                    <span>$9.99</span>
+                  </div>
+                </div>
+              </div>
+              <div class="courses__item" id="courses__item-1">
+                <img src="./img/kh2.jpg" alt="kh2" />
+                <div class="courses__item-text">
+                  <h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo, deleniti?
+                  </h3>
+                  <p>Lorem ipsum dolor sit.</p>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                    <span>4.6</span>
+                    <span>(11.597)</span>
+                  </div>
+                  <div class="price">
+                    <span>$179.99</span>
+                    <span>$9.99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="courses-carousel multiple-items"
+              data-tab-target="business"
+            >
+              <div class="courses__item" id="courses__item-1">
+                <img src="./img/kh3.jpg" alt="kh3" />
+                <div class="courses__item-text">
+                  <h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo, deleniti?
+                  </h3>
+                  <p>Lorem ipsum dolor sit.</p>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                    <span>4.6</span>
+                    <span>(11.597)</span>
+                  </div>
+                  <div class="price">
+                    <span>$179.99</span>
+                    <span>$9.99</span>
+                  </div>
+                </div>
+              </div>
+              <div class="courses__item" id="courses__item-1">
+                <img src="./img/kh3.jpg" alt="kh3" />
+                <div class="courses__item-text">
+                  <h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo, deleniti?
+                  </h3>
+                  <p>Lorem ipsum dolor sit.</p>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                    <span>4.6</span>
+                    <span>(11.597)</span>
+                  </div>
+                  <div class="price">
+                    <span>$179.99</span>
+                    <span>$9.99</span>
+                  </div>
+                </div>
+              </div>
+              <div class="courses__item" id="courses__item-1">
+                <img src="./img/kh3.jpg" alt="kh3" />
+                <div class="courses__item-text">
+                  <h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo, deleniti?
+                  </h3>
+                  <p>Lorem ipsum dolor sit.</p>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                    <span>4.6</span>
+                    <span>(11.597)</span>
+                  </div>
+                  <div class="price">
+                    <span>$179.99</span>
+                    <span>$9.99</span>
+                  </div>
+                </div>
+              </div>
+              <div class="courses__item" id="courses__item-1">
+                <img src="./img/kh3.jpg" alt="kh3" />
+                <div class="courses__item-text">
+                  <h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo, deleniti?
+                  </h3>
+                  <p>Lorem ipsum dolor sit.</p>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                    <span>4.6</span>
+                    <span>(11.597)</span>
+                  </div>
+                  <div class="price">
+                    <span>$179.99</span>
+                    <span>$9.99</span>
+                  </div>
+                </div>
+              </div>
+              <div class="courses__item" id="courses__item-1">
+                <img src="./img/kh3.jpg" alt="kh3" />
+                <div class="courses__item-text">
+                  <h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo, deleniti?
+                  </h3>
+                  <p>Lorem ipsum dolor sit.</p>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                    <span>4.6</span>
+                    <span>(11.597)</span>
+                  </div>
+                  <div class="price">
+                    <span>$179.99</span>
+                    <span>$9.99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- VIEWING -->
+    <!-- DOWNLOAD -->
+    <!-- CATEGORIES -->
+    <!-- FEEDBACK -->
+    <!-- PARTNER -->
+    <!-- FOOTER -->
+
+    <!-- JQUERY JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- SLICK JS -->
+    <script src="./slick-1.8.1/slick/slick.min.js"></script>
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> -->
+
+    <script src="./main.js"></script>
+  </body>
+</html>
